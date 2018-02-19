@@ -1,6 +1,6 @@
 <?php 
 $Accueil = "Mon Accueil";
-$Liste_Menu = array("Mon Accueil","Nouveautés", "Nos Magasins", "Contacts", "Panier");
+$Liste_Menu = array("Mon Accueil","Nouveauté", "Nos Magasins", "Contacts", "Panier");
 ?>
 
 
@@ -11,14 +11,9 @@ $Liste_Menu = array("Mon Accueil","Nouveautés", "Nos Magasins", "Contacts", "Pa
 	<link rel="stylesheet" type="text/css" href="testcss.css">
 </head>
 <body>
-	<header>
-
-<?php 
-	for ($i=0; $i <count($Liste_Menu) ; $i++) { 
-		echo "<button>".$Liste_Menu[$i]."</button>";
-	}
+<?php
+	include ("header.php");
 ?>
-	</header>
 	<h1>Voici un Titre</h1>
 	<h2>Premier Titre de Paragraphe</h2>
 		<p>Premier Paragrahe</p>
