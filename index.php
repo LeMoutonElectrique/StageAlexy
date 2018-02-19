@@ -8,7 +8,7 @@ $Liste_Menu = array("Mon Accueil","Nouveauté", "Nos Magasins", "Contacts", "Pan
 <html>
 <head>
 	<title>Test Stage</title>
-	<link rel="stylesheet" type="text/css" href="testcss.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 <?php
@@ -19,6 +19,9 @@ $Liste_Menu = array("Mon Accueil","Nouveauté", "Nos Magasins", "Contacts", "Pan
 		<p>Premier Paragrahe</p>
 	<h2>Second Titre de Paragraphe</h2>
 		<p>Second Paragraphe</p>
+<?php
+	include ("footer.php");
+?>
 </body>
 </html>
 
