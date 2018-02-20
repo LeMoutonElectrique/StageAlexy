@@ -7,8 +7,11 @@ $Liste_Menu = array("Mon Accueil","Nouveauté", "Nos Magasins", "Contacts", "Pan
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Test Stage</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<?php
+
+$titlehead="Accueil";
+include('head.php');
+?>
 </head>
 <body>
 <?php

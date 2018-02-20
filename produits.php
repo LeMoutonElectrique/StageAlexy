@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Page des produits</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
+	
+<?php
+
+	$titlehead="Les Produits";
+	include('head.php');
+
+?>
+
 </head>
 <body>
 
@@ -24,10 +30,9 @@
 </main>
 
 
-
-
-</body>
 <?php
 	include ("footer.php");
 ?>
+
+</body>
 </html>
