@@ -1,5 +1,5 @@
-<?php
 
+<?php
 // la variable $titlehead doit être affectée avant de include("head.php");
 // voir  dans test.php
 	echo "<title>".$titlehead."</title>\n";
@@ -11,7 +11,6 @@
 <!--
 ce serait intéressant d'utiliser le javascript 
 ___APRES__ avoir inclus la librairie jquery.
-
 autrement, ça ne marche pas.
 -->
 
