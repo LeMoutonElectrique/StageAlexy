@@ -9,7 +9,7 @@
 	
 require_once("alxLib.php"); // obligatoire d'include le fichier de lib
 
-//echo getHead("Les Produits");
+echo getHead("Les Produits");
 
 
 ?>
