@@ -4,8 +4,13 @@
 
 <?php
 	
-	$titlehead="Les Produits";
-	include('head.php');
+	
+	
+	
+require_once("alxLib.php"); // obligatoire d'include le fichier de lib
+
+//echo getHead("Les Produits");
+
 
 ?>
 
