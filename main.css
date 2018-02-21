@@ -5,9 +5,15 @@ button{
 }
 
 footer{
-	top: 100px;
+	height: auto;
+	bottom: 10%;
+	background-image: url("images/bg_test_imgmr.png");
+	height: 400px;
+	 
+
 }
 
 h1{
-	margin-left: 45%;
+	text-align: center;
+
 }
