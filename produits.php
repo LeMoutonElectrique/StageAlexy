@@ -16,6 +16,9 @@
 		include ('header.php');
 		
 ?>
+
+	<h1> Les Produits du moments</h1>
+
 <main>
 
 <?php 
