@@ -1,14 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+
 <?php
+include("alxLib.php"); // obligatoire d'include le fichier de lib
 
-	$titlehead = 5 ;
-	
-	if (empty($titlehead)) {
-		echo "cette variable est vide";
-	
-		
-	}
-	else {
-		echo $titlehead;
-	}
-
+echo getHead("Titre de Test");
 ?>
+
+</head>
+<body>
+</body>
+</html>
