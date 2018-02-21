@@ -1,5 +1,5 @@
 <footer>
 <?php 
-	echo "voici le footer de ma page\n";
+	echo "<h1> voici le footer de ma page </h1>\n";
 ?>
 </footer>
