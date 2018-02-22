@@ -7,7 +7,7 @@ button{
 footer{
 	height: auto;
 	bottom: 10%;
-	background-image: url("images/bg_test_imgmr.png");
+	/*background-image: url("images/bg_test_imgmr.png");*/
 	height: 200px;
 	 
 
@@ -16,4 +16,12 @@ footer{
 h1{
 	text-align: center;
 
+}
+
+.cursor{
+	cursor: crosshair;
+}
+
+body{
+	cursor: wait;
 }

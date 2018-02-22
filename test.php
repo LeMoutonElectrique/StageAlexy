@@ -17,13 +17,18 @@ echo getHead("Titre de Test");
 
 ?>
 
-	<p> Voici un paragraphe </p>
+<?php
+	
+	echo getListProducts();
+
+?>
+
+
 <?php
 
-	require_once("alxLib.php");
+	include('footer.php');
 
-	echo getFooter();
-
+	
 ?>
 
 </body>
