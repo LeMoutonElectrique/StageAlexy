@@ -35,9 +35,6 @@ function getHead($titlehead){
     return $result;
 }
 
-?>
-
-<?php
 
 
 /**
@@ -57,9 +54,6 @@ function getFooter(){
 
 }
 
-?>
-
-<?php
 
 
 /**
@@ -86,9 +80,6 @@ function getHeader(){
 	return $result;
 }
 
-?>
-
-<?php
 
 
 /**
