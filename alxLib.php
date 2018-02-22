@@ -12,9 +12,7 @@
  */
 
 /**
- * prendre l'habitude de mettre un commentaire en tete de la fonction pour expliquer
- * - a quoi elle sert
- * - comment elle fonctionne si c'est différent
+ Fonction pour intégrer le head en pouvant choisir le titre avec un echo getHead();
  */
 function getHead($titlehead){
 
@@ -38,9 +36,7 @@ function getHead($titlehead){
 
 
 /**
- * prendre l'habitude de mettre un commentaire en tete de la fonction pour expliquer
- * - a quoi elle sert
- * - comment elle fonctionne si c'est différent
+	Fonction pour intégrer le footer automatiquement avec un echo getFooter();
  */
 function getFooter(){
 
@@ -57,9 +53,7 @@ function getFooter(){
 
 
 /**
- * prendre l'habitude de mettre un commentaire en tete de la fonction pour expliquer
- * - a quoi elle sert
- * - comment elle fonctionne si c'est différent
+Fonction pour intégrer le header et la suite de bouton qui le compose avec un echo getHeader();
  */
 function getHeader(){
 
@@ -83,9 +77,7 @@ function getHeader(){
 
 
 /**
- * prendre l'habitude de mettre un commentaire en tete de la fonction pour expliquer
- * - a quoi elle sert
- * - comment elle fonctionne si c'est différent
+	Liste des prosuits pour la page produits.php à inclure avec un getListProducts();
  */
 function getListProducts(){
 
