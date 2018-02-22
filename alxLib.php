@@ -11,6 +11,11 @@
  * 
  */
 
+/**
+ * prendre l'habitude de mettre un commentaire en tete de la fonction pour expliquer
+ * - a quoi elle sert
+ * - comment elle fonctionne si c'est différent
+ */
 function getHead($titlehead){
 
 	if (empty($titlehead)) {
@@ -34,6 +39,12 @@ function getHead($titlehead){
 
 <?php
 
+
+/**
+ * prendre l'habitude de mettre un commentaire en tete de la fonction pour expliquer
+ * - a quoi elle sert
+ * - comment elle fonctionne si c'est différent
+ */
 function getFooter(){
 
 	$result="";
@@ -50,6 +61,12 @@ function getFooter(){
 
 <?php
 
+
+/**
+ * prendre l'habitude de mettre un commentaire en tete de la fonction pour expliquer
+ * - a quoi elle sert
+ * - comment elle fonctionne si c'est différent
+ */
 function getHeader(){
 
 	$Liste_Menu_Content = array("Mon Accueil","Nouveauté", "Nos Produits", "Contacts", "Panier");
@@ -73,6 +90,12 @@ function getHeader(){
 
 <?php
 
+
+/**
+ * prendre l'habitude de mettre un commentaire en tete de la fonction pour expliquer
+ * - a quoi elle sert
+ * - comment elle fonctionne si c'est différent
+ */
 function getListProducts(){
 
 	$List_Products = array ("Shadox of the Colossus","Donkey-Kong Country:Tropical Freeze","Monster Hunter World","DragonBall Fighter Z","Bayonetta 2","God of War","Kirby: Star allies","Mario Kart 8 Deluxe","The Legend of Zelda:Breath of the Wild","Super Mario Odyssey","Dark Souls","Secret of Mana","Splatoon 2");
