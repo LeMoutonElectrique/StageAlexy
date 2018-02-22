@@ -26,13 +26,35 @@ function getHead($titlehead){
     // puis on y concaténe des chaines de caractéres
 	$result .= '<title>'.$titlehead.'</title>'."\n";
 	$result .= '<link rel="stylesheet" type="text/css" href="main.css">'."\n";
-    $result .= '<script src="../js/jquery-3.3.1.min.js"></script>'."\n";
+    $result .= '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>'."\n";
 
     // puis on renvoie ça à l'appelant
 
     return $result;
 }
 
+/**
+Fonction pour intégrer le header et la suite de bouton qui le compose avec un echo getHeader();
+ */
+function getHeader(){
+
+	$Liste_Menu_Content = array("Mon Accueil","Nouveauté", "Nos Produits", "Contacts", "Panier");
+	$Liste_Menu_Links = array("http://localhost/StageAlexy/index.php","http://localhost/StageAlexy/index.php","http://localhost/StageAlexy/produits.php","http://localhost/StageAlexy/index.php","http://localhost/StageAlexy/index.php");
+
+	$result="";
+
+	$result.='<header>'."\n";
+	$result.='<nav>'."\n";
+ 
+	for ($i=0; $i <count($Liste_Menu_Content) ; $i++) { 
+		echo "<a href=\"".$Liste_Menu_Links[$i]."\"><button>".$Liste_Menu_Content[$i]."</button></a>\n";
+		}
+	$result.='</nav>'."\n";
+	$result.='</header>'."\n";
+
+	return $result;
+
+}
 
 
 /**
@@ -52,27 +74,6 @@ function getFooter(){
 
 
 
-/**
-Fonction pour intégrer le header et la suite de bouton qui le compose avec un echo getHeader();
- */
-function getHeader(){
-
-	$Liste_Menu_Content = array("Mon Accueil","Nouveauté", "Nos Produits", "Contacts", "Panier");
-	$Liste_Menu_Links = array("index.php","index.php","produits.php","index.php","index.php");
-
-	$result="";
-
-	$result .= '<header>'."\n";
-	$result .=	'<nav>'."\n";
- 
-	for ($i=0; $i <count($Liste_Menu_Content) ; $i++) { 
-		echo "<button>".$Liste_Menu_Content[$i]."</button>\n";
-		}
-	$result.='</nav>'."\n";
-	$result.='</header>'."\n";
-
-	return $result;
-}
 
 
 

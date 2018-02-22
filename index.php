@@ -11,7 +11,8 @@
 
 </head>
 <body>
-
+<header>
+	<nav>
 <?php
 	echo getHeader();
 ?>
