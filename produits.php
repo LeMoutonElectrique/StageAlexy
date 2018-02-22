@@ -27,7 +27,7 @@ echo getHead("Les Produits");
 <main>
 
 <?php 
-		include ('Array_produits.php');
+		echo getListProducts();
 		
 ?>
 
