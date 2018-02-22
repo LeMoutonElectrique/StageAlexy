@@ -31,3 +31,42 @@ function getHead($titlehead){
 }
 
 ?>
+
+<?php
+
+function getFooter(){
+
+	$result="";
+
+	$result .= '<footer>'."\n";
+	$result .= '<h1> voici le footer de ma page </h1>'."\n";
+	$result .= '</footer>'."\n";
+
+	return $result;
+
+}
+
+?>
+
+<?php
+
+function getHeader(){
+
+	$Liste_Menu_Content = array("Mon Accueil","Nouveauté", "Nos Produits", "Contacts", "Panier");
+	$Liste_Menu_Links = array("index.php","index.php","produits.php","index.php","index.php");
+
+	$result="";
+
+	$result .= '<header>'."\n";
+	$result .=	'<nav>'."\n";
+ 
+	for ($i=0; $i <count($Liste_Menu_Content) ; $i++) { 
+		echo "<button>".$Liste_Menu_Content[$i]."</button>\n";
+		}
+	$result.='</nav>'."\n";
+	$result.='</header>'."\n";
+
+	return $result;
+}
+
+?>

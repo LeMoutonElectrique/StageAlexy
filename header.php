@@ -1,6 +1,6 @@
 <?php
-	$Liste_Menu_Content = array("Mon Accueil","Nouveauté", "Nos Magasins", "Contacts", "Panier");
-	$Liste_Menu_Links = array("index.php","produits.php","index.php","index.php","index.php");
+	$Liste_Menu_Content = array("Mon Accueil","Nouveauté", "Nos Produits", "Contacts", "Panier");
+	$Liste_Menu_Links = array("index.php","index.php","produits.php","index.php","index.php");
 ?>
 <header>
 		<nav>

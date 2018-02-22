@@ -1,17 +1,13 @@
-<?php 
-$Accueil = "Mon Accueil";
-$Liste_Menu = array("Mon Accueil","Nouveauté", "Nos Magasins", "Contacts", "Panier");
-?>
-
-
 <!DOCTYPE html>
 <html>
 <head>
 	<?php
 
-$titlehead="Accueil";
-include('head.php');
+		require_once("alxLib.php");
+
+		echo getHead("Accueil");
 ?>
+
 </head>
 <body>
 <?php

@@ -18,7 +18,7 @@ echo getHead("Les Produits");
 <body>
 
 <?php 
-		include ('header.php');
+		echo getHeader();
 		
 ?>
 
@@ -35,7 +35,7 @@ echo getHead("Les Produits");
 
 
 <?php
-	include ("footer.php");
+	echo getFooter();
 ?>
 
 </body>
