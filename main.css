@@ -1,5 +1,12 @@
+header{
+	border: thick solid red;
+}
+
+
 button{
 	cursor: pointer;
+	height: 60px;
+	width: 100px;
 
 	
 }
@@ -7,10 +14,17 @@ button{
 footer{
 	height: auto;
 	bottom: 10%;
-	/*background-image: url("images/bg_test_imgmr.png");*/
+	/*background-image: url("images/bg_test_ggstyle.jpg");
+	background-repeat: no-repeat;*/
+	background-size: 1600px 200px;
 	height: 200px;
 	 
 
+}
+
+main{
+	/*background-image: url("images/bg_test_ggstyle.jpg");
+	background-repeat: no-repeat;*/
 }
 
 h1{
@@ -19,9 +33,14 @@ h1{
 }
 
 .cursor{
-	cursor: crosshair;
+	cursor: pointer;
 }
 
-body{
-	cursor: wait;
+td {
+	width: 120px;
+}
+
+
+#copyright{
+	width: 200px;
 }

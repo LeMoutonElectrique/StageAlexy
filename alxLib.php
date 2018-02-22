@@ -41,16 +41,22 @@ function getHeader(){
 	$Liste_Menu_Content = array("Mon Accueil","Nouveauté", "Nos Produits", "Contacts", "Panier");
 	$Liste_Menu_Links = array("http://localhost/StageAlexy/index.php","http://localhost/StageAlexy/index.php","http://localhost/StageAlexy/produits.php","http://localhost/StageAlexy/index.php","http://localhost/StageAlexy/index.php");
 
+		echo "<header>\n";
+		echo "<nav>\n";
+
 	$result="";
 
-	$result.='<header>'."\n";
-	$result.='<nav>'."\n";
- 
+	
+ 	
+
 	for ($i=0; $i <count($Liste_Menu_Content) ; $i++) { 
 		echo "<a href=\"".$Liste_Menu_Links[$i]."\"><button>".$Liste_Menu_Content[$i]."</button></a>\n";
 		}
-	$result.='</nav>'."\n";
-	$result.='</header>'."\n";
+	
+	
+
+	$result .= '</nav>'."\n";
+	$result .= '</header>'."\n";
 
 	return $result;
 
@@ -62,10 +68,21 @@ function getHeader(){
  */
 function getFooter(){
 
+	$Column_List_Footer_Content = array("© 2018 VideoGames","Terms","Privacy","Security","Status","Help");
+	$Column_List_Footer_Id = array("copyright","terms","privacy","security","status","help");
+
 	$result="";
 
-	$result .= '<footer>'."\n";
-	$result .= '<h1> voici le footer de ma page </h1>'."\n";
+	echo "<footer>\n";
+	echo "<table>\n";
+	echo "<tr>\n";
+
+		for ($l=0; $l < count($Column_List_Footer_Content) ; $l++) { 
+			echo "<td id=\"".$Column_List_Footer_Id[$l]."\">".$Column_List_Footer_Content[$l]."</td>\n";
+		}
+	
+	$result .= '</tr>'."\n";
+	$result .= '</table>'."\n";
 	$result .= '</footer>'."\n";
 
 	return $result;

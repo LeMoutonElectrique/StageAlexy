@@ -10,19 +10,19 @@ echo getHead("Titre de Test");
 
 </head>
 <body>
-
+		
 <?php
-
+	
 	echo getHeader();
 
 ?>
-
+<main>
 <?php
 	
 	echo getListProducts();
 
 ?>
-
+</main>
 
 <?php
 
