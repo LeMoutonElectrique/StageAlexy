@@ -3,7 +3,8 @@
 <head>
 
 <?php
-require_once("alxLib.php"); // obligatoire d'include le fichier de lib
+require_once("StructLib.php");
+require_once("FunctionLib.php");
 
 echo getHead("Titre de Test");
 ?>
@@ -16,17 +17,25 @@ echo getHead("Titre de Test");
 	echo getHeader();
 
 ?>
+
+<?php
+	
+	
+	echo getMenuDéroulantContent();
+?>
 <main>
 <?php
 	
 	echo getListProducts();
+	
+
 
 ?>
 </main>
 
 <?php
 
-	include('footer.php');
+	echo getFooter();
 
 	
 ?>

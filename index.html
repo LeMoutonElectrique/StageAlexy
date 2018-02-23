@@ -16,6 +16,7 @@
 		</nav>
 	</header>
 	<main>
+		<span id="pouf"> paf </span>
 		<h1>Voici un Titre</h1>
 		<h2>Premier Titre de Paragraphe</h2>
 			<p>Premier Paragrahe</p>
@@ -28,9 +29,10 @@
 
 <script>
 $('button').click(function(){
-        console.log($(this).html());
+        var ValBtn=$(this).html();
+        $('#pouf').html(ValBtn);
         });
 </script>
     
-</body>
+</body>	
 </html>

@@ -6,8 +6,8 @@
 	
 	
 	
-	
-require_once("alxLib.php"); // obligatoire d'include le fichier de lib
+require_once("FunctionLib.php");
+require_once("StructLib.php");
 
 echo getHead("Les Produits");
 
@@ -19,12 +19,15 @@ echo getHead("Les Produits");
 
 <?php 
 		echo getHeader();
+		echo getMenuDéroulantContent();
 		
 ?>
 
-	<h1> Les Produits du moments</h1>
+	
 
 <main>
+
+	<h1> Les Produits du moments</h1>
 
 <?php 
 		echo getListProducts();

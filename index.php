@@ -4,15 +4,15 @@
 
 <?php
 
-		require_once("alxLib.php");
+		require_once("StructLib.php");
+		require_once("FunctionLib.php");
 
 		echo getHead("Accueil");
 ?>
 
 </head>
 <body>
-<header>
-	<nav>
+
 <?php
 	echo getHeader();
 ?>
