@@ -3,6 +3,14 @@
  * Pour stocker les informations on utilise un fichier json
  *
  * Pour les récupérer, on le lit avec php, et on affiche les éléments
+ *
+ *
+ * ha, oui, pour voir le résultat , il faut exécuter ce fichier.
+ *
+ * 2 possibilités:
+ *  -  l'ouvrir dans le navigateur comme une page normale, et visualiser le source
+ *  - ou bien, php getJson.php en ligne de commande.
+ *
  */
 
 // on charge le fichier
