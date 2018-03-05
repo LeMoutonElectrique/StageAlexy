@@ -1,0 +1,18 @@
+header{
+	height: 80px;
+	background-color: #D3D3D3;
+}
+
+button{
+	height: 80px;
+	width: 140px;
+	float: right;
+	cursor: pointer;
+}
+
+.conteneurinfosjeux{
+	height: 250px;
+}
+.imagejeux{
+	float: left;
+}
