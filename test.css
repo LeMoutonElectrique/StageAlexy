@@ -10,9 +10,30 @@ button{
 	cursor: pointer;
 }
 
+hr{
+	margin-left: 200px;
+}
+
 .conteneurinfosjeux{
-	height: 250px;
+	height: 200px;
+	width: 1000px;
+	margin-left: 200px;
+
 }
 .imagejeux{
 	float: left;
+	margin-left: 50px;
+}
+
+.conteneurinfosjeux .imagejeux{
+	cursor: none;
+	background-color: #BDB76B;
+}
+
+.conteneurinfosjeux .descriptionjeux{
+	height: 168px;
+	background-color: #D2B48C;
+	margin-left: 350px;
+	text-align: center;
+	vertical-align: middle;
 }
