@@ -39,7 +39,7 @@ Fonction pour intégrer le header et la suite de bouton qui le compose avec un e
 function getHeader(){
 
 	$Liste_Menu_Content = array("Panier","Contacts"," Nos Produits", "Accueil");
-	$Liste_Menu_Links = array("http://localhost/StageAlexy/index.php","http://localhost/StageAlexy/index.php","http://localhost/StageAlexy/produits.php","http://localhost/StageAlexy/index.php");
+	$Liste_Menu_Links = array("index.php","index.php","produits.php","index.php");
 	$Liste_Menu_Id = array("panier","contacts","produits","accueil");
 
 		echo "<header>\n";
