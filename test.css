@@ -20,6 +20,12 @@ hr{
 	margin-left: 200px;
 
 }
+
+.conteneurinfosjeux hr{
+	margin-left: 50px;
+
+}
+
 .imagejeux{
 	float: left;
 	margin-left: 50px;
@@ -36,4 +42,9 @@ hr{
 	margin-left: 350px;
 	text-align: center;
 	vertical-align: middle;
+	cursor: vertical-text;
+}
+
+#bug:hover .imagejeux{
+	display: none;
 }

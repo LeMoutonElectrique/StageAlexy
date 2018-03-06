@@ -15,13 +15,13 @@ echo getHead("Titre de Test");
 <?php
 	
 	echo getHeader();
-
+	echo getMenuDéroulantContent();
 ?>
 
 <?php
 	
 	
-	echo getMenuDéroulantContent();
+	
 ?>
 <main>
 <?php
