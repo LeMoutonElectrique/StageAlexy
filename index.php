@@ -8,13 +8,15 @@
 		require_once("FunctionLib.php");
 
 		echo getHead("Accueil");
+
 ?>
 
 </head>
 <body>
-
+	<div id="main">
 <?php
 	echo getHeader();
+	echo getMenuDéroulantContent();
 ?>
 
 	<main>
@@ -29,7 +31,7 @@
 <?php
 	echo getFooter();
 ?>
-
+</div>
 </body>
 </html>
 

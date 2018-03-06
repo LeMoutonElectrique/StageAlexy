@@ -1,8 +1,39 @@
+
+
 *{
-	
 	box-sizing: border-box;
 	margin:0;
 	padding: 0;
+}
+
+body,html{
+	height: 100%;
+}
+
+
+body{
+	/*min-height: 100%;
+	position: relative;
+	padding-bottom: 20px;*/
+	
+}
+
+#main{
+
+	/*max-width:1280px;*/
+	min-height:100%;
+	margin:0 auto;
+	position:relative;
+
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding-top: 50px;
+	height: 50px;
+	text-align: center;
 }
 
 header{
@@ -28,10 +59,6 @@ button:hover {
 	background-color: red;
 }
 
-footer{
- 
-
-}
 
 main{
 	padding-top: 85px;
@@ -56,11 +83,15 @@ td {
 }
 
 #menu_deroulant_content a{
+	display: none;
+}
+
+/*#menu_deroulant_content a{
 	display: block;
 	background-color: rgb(2,2,2);
 	width: 140px;
 	height: 40px;
-}
+}*/
 
 #pc{
 	
