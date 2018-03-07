@@ -19,7 +19,7 @@ echo getHead("Les Produits");
 	<div id="main">
 <?php 
 		echo getHeader();
-		echo getMenuDéroulantContent();
+		//echo getMenuDéroulantContent();
 		
 ?>
 

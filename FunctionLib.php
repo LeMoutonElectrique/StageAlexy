@@ -20,10 +20,10 @@ function getListProducts(){
 
 }
 
-function getMenuDéroulantContent(){
+/**function getMenuDéroulantContent(){
 
 	$Menu_Deroulant_Content = array("PC","XBOX","SONY","RETRO");
-	$Menu_Deroulant_Content_Links = array("http://localhost/StageAlexy/produits.php","http://localhost/StageAlexy/produits.php","http://localhost/StageAlexy/produits.php","http://localhost/StageAlexy/produits.php");
+	$Menu_Deroulant_Content_Links = array("produits.php","produits.php","produits.php","produits.php");
 	$Menu_Deroulant_Content_Id = array("pc","xbox","sony","retro");
 
 	$result="";
@@ -42,6 +42,6 @@ function getMenuDéroulantContent(){
 	$result.= '</header>'."\n";
 	return $result;
 
-}
+}**/
 
 ?>

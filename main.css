@@ -46,7 +46,7 @@ header{
 
 
 button{
-	cursor: pointer;
+	
 	height: 80px;
 	width: 140px;
 	float: right;
@@ -55,10 +55,107 @@ button{
 
 }
 
-button:hover {
+#accueil:hover{
 	background-color: red;
+	cursor: pointer;
 }
 
+#produits:hover{
+	background-color: red;
+	cursor: pointer;
+}
+
+#pc{
+	
+	width: 140px;
+	height: 40px;
+	position: fixed;
+	top: 80px;
+	right: 280px;
+	text-align: center;
+}
+
+
+#xbox{
+	
+	width: 140px;
+	height: 40px;
+	position: fixed;
+	top: 120px;
+	right: 280px;
+	text-align: center;
+}
+
+#sony{
+	
+	width: 140px;
+	height: 40px;
+	position: fixed;
+	top: 160px;
+	right: 280px;
+	text-align: center;
+}
+
+#retro{
+	
+	width: 140px;
+	height: 40px;
+	position: fixed;
+	top: 200px;
+	right: 280px;
+	text-align: center;
+}
+
+/*.menu_deroulant_content{
+	
+	float: right;
+	right: 280px;
+	width: 140px;
+	height: 160px;
+	margin-top: 80px;
+}*/
+
+.menu_deroulant_content a{
+	background-color: rgba(0,0,0,0);
+	color: rgba(0,0,0,0);
+}	
+
+.menu_deroulant_content:hover a{
+	background-color: rgba(0,0,0,0.5);
+	color: red;
+}
+/*.menu_deroulant_content{
+	display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menu_deroulant_content a {
+	color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    position: absolute;
+
+}
+
+
+.menu_deroulant_content a:hover {
+	background-color: #f1f1f1;
+}
+
+
+.menu_deroulant_content:hover < .menu_deroulant_content a{
+	display: block;
+}
+
+.menu_deroulant #produits:hover > .menu_deroulant_content a{
+    display: block;
+}*/
 
 main{
 	padding-top: 85px;
@@ -81,86 +178,3 @@ td {
 #copyright{
 	width: 200px;
 }
-
-#menu_deroulant_content a{
-	display: none;
-}
-
-/*#menu_deroulant_content a{
-	display: block;
-	background-color: rgb(2,2,2);
-	width: 140px;
-	height: 40px;
-}*/
-
-#pc{
-	
-	width: 140px;
-	height: 40px;
-	position: absolute;
-	top: 80px;
-	right: 280px;
-	text-align: center;
-}
-
-
-#xbox{
-	
-	width: 140px;
-	height: 40px;
-	position: absolute;
-	top: 120px;
-	right: 280px;
-	text-align: center;
-}
-
-#sony{
-	
-	width: 140px;
-	height: 40px;
-	position: absolute;
-	top: 160px;
-	right: 280px;
-	text-align: center;
-}
-
-#retro{
-	
-	width: 140px;
-	height: 40px;
-	position: absolute;
-	top: 200px;
-	right: 280px;
-	text-align: center;
-}
-
-
-/*#menu_deroulant_content{
-	display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-
-    
-}
-
-#menu_deroulant_content a{
-	color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    font-size: 14px;
-
-}
-
-
-#menu_deroulant_content a:hover {
-	background-color: #f1f1f1;
-}
-
-#menu_deroulant:hover #menu_deroulant_content {
-    display: block;
-}*/
-

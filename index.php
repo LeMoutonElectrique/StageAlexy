@@ -5,7 +5,7 @@
 <?php
 
 		require_once("StructLib.php");
-		require_once("FunctionLib.php");
+		//require_once("FunctionLib.php");
 
 		echo getHead("Accueil");
 
@@ -16,7 +16,7 @@
 	<div id="main">
 <?php
 	echo getHeader();
-	echo getMenuDéroulantContent();
+	//echo getMenuDéroulantContent();
 ?>
 
 	<main>
