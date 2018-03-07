@@ -3,6 +3,10 @@
 
 /*
  * On va voir ce que c'est qu'un tableau ainsi qu'un tableau associatif, et comment les afficher
+ *
+ * Pour l'exécuter, l'ouvrir dans le navigateur à l'adresse
+ *
+ * http://....../StageAlexy/arraysExamples.php
  */
 
 

@@ -4,13 +4,13 @@
  *
  * Pour les récupérer, on le lit avec php, et on affiche les éléments
  *
- *
- * ha, oui, pour voir le résultat , il faut exécuter ce fichier.
- *
+ */
+
+/* ha, oui, pour voir le résultat , il faut exécuter ce fichier.
  * 2 possibilités:
  *  -  l'ouvrir dans le navigateur comme une page normale, et visualiser le source
+ *      http://....../StageAlexy/arraysExamples.php
  *  - ou bien, php getJson.php en ligne de commande.
- *
  */
 
 // on charge le fichier
