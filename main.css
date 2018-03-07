@@ -161,6 +161,10 @@ article{
 
 #mise_en_page_articles img{
 	float: left;
+}
+
+#mise_en_page_articles .images_produits{
+	float: left;
 	margin-top: 40px;
 	
 }

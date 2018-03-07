@@ -39,7 +39,7 @@ echo getHead("Les Produits");
 ?>-->
 <div id="mise_en_page_articles">
 		<article>
-			<img src="images jeux/monsterhunterworld.jpg">
+			<img src="images jeux/monsterhunterworld.jpg" class="images_produits">
 			<h2>Nom du jeux</h2>
 			<h3>Prix du jeu</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tellus eu lacus fermentum aliquet sed eget lectus. <a href="#">Voir plus</a></p>
@@ -55,7 +55,7 @@ echo getHead("Les Produits");
 		<hr>
 		<br>
 		<article>
-			<img src="images jeux/monsterhunterworld.jpg">
+			<img src="images jeux/monsterhunterworld.jpg" class="images_produits">
 			<h2>Nom du jeux</h2>
 			<h3>Prix du jeu</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tellus eu lacus fermentum aliquet sed eget lectus.<a href="#">Voir plus</a></p>
@@ -70,7 +70,7 @@ echo getHead("Les Produits");
 		<hr>
 		<br>
 		<article>
-			<img src="images jeux/monsterhunterworld.jpg">
+			<img src="images jeux/monsterhunterworld.jpg" class="images_produits">
 			<h2>Nom du jeux</h2>
 			<h3>Prix du jeu</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tellus eu lacus fermentum aliquet sed eget lectus.<a href="#">Voir plus</a></p>
@@ -85,7 +85,7 @@ echo getHead("Les Produits");
 		<hr>
 		<br>
 		<article>
-			<img src="images jeux/monsterhunterworld.jpg">
+			<img src="images jeux/monsterhunterworld.jpg" class="images_produits">
 			<h2>Nom du jeux</h2>
 			<h3>Prix du jeu</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tellus eu lacus fermentum aliquet sed eget lectus.<a href="#">Voir plus</a></p>
@@ -100,7 +100,7 @@ echo getHead("Les Produits");
 		<hr>
 		<br>
 		<article>
-			<img src="images jeux/monsterhunterworld.jpg">
+			<img src="images jeux/monsterhunterworld.jpg" class="images_produits">
 			<h2>Nom du jeux</h2>
 			<h3>Prix du jeu</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tellus eu lacus fermentum aliquet sed eget lectus<a href="#">Voir plus</a></p>
