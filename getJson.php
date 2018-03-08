@@ -32,7 +32,7 @@ if ($listeJeux == NULL) {
 // on peut afficher l'objet résultant
 
 //isset($listeJeux);
-var_dump($listeJeux);
+//var_dump($listeJeux);
    
 // On affiche la liste des jeux 
 // ------------------------------
@@ -43,7 +43,7 @@ var_dump($listeJeux);
 foreach($listeJeux as $key => $value){
      print "  - ".$key."\n";
 }
-exit();
+//exit();
 // On peut montrer le nom d'un jeu en particulier
 // ----------------------------------------------
 echo "\n---------- le jeu nrd ----------\n";
@@ -51,8 +51,12 @@ echo "\n---------- le jeu nrd ----------\n";
 // C'est à dire que l'on récupére un jeu en particulier avec sa clef
 // et on affiche la clef 'nom ' de ce jeu (qui est lui même un tableau associatif)
 //
-$lejeuShdwof = $listeJeux["shdwof"];
+@$lejeuShdwof = $listeJeux["shdwof"];
 echo $lejeuShdwof["nom"]."\n";
+
+    if ($lejeuShdwof == NULL) {
+        echo "C'est au niveau de la variable \$lejeuShdwof que ça ne marche pas";
+    }
 
 // On peut montrer toute la description d'un jeu en particulier
 // ------------------------------------------------------------
@@ -62,28 +66,37 @@ echo "\n---------- le jeu got ----------\n";
 // C'est comme le parcours de la liste des jeux:
 
 // 1- on récupére un jeu en particulier
-$lejeuDkcntry = $listeJeux["dkcntry"];
-
+@$lejeuDkcntry = $listeJeux["dkcntry"];
+    if ($lejeuDkcntry == NULL) {
+        echo "c'est au niveau de la variable \$lejeuDkcntry que ça ne marche pas";
+    }
 // 2- on parcourt toute la liste associative clef/valeur
 //    que  l'on affiche
+
 foreach($lejeuDkcntry as $key => $value)
 {
     // 3- Attention, si c'est la clef support que l'on  veut afficher,
     //    comme c'est un tableau
     //    ben on le parcourt avec un foreach également
+    
+     if ($lejeuDkcntry == NULL) {
+        echo "c'est au niveau de la variable \$lejeuDkcntry que ça ne marche pas";
+     }
+  
+    
     if( $key == "support"){
-        echo "supports: ";
+            echo "supports: ";
         foreach( $value as $support){
             echo "$support ";
         }
         continue;
     }
-
+ 
     // 4- sinon, on affiche la clef et sa valeur
     echo $key.": ".$value."\n";
 }
 
 
 // ouf ...
-  
+
 ?>

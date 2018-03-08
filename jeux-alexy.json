@@ -6,5 +6,18 @@
         "date": 20180217,
         "support": ["pc"]
     },
-    
+    "got":
+    {
+        "nom": "game of thrones",
+        "prix": 21,
+        "date": 20171018,
+        "support": ["pc", "sony"]
+    },
+    "supermario":
+    {
+        "nom": "Super Mario",
+        "prix": 2,
+        "date": 20140908,
+        "support": ["pc", "sony", "xbox"]
+    }
 }
