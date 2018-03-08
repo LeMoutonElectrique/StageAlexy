@@ -15,7 +15,7 @@
 
 // on charge le fichier
 // --------------------
-@$json = file_get_contents("jeux-alexy.json");
+@$json = file_get_contents("jeux.json");
 
 
 // on peut afficher le contenu de ce fichier
@@ -69,6 +69,7 @@ echo "\n---------- le jeu got ----------\n";
 @$lejeuDkcntry = $listeJeux["dkcntry"];
     if ($lejeuDkcntry == NULL) {
         echo "c'est au niveau de la variable \$lejeuDkcntry que ça ne marche pas";
+        exit();
     }
 // 2- on parcourt toute la liste associative clef/valeur
 //    que  l'on affiche
@@ -79,10 +80,7 @@ foreach($lejeuDkcntry as $key => $value)
     //    comme c'est un tableau
     //    ben on le parcourt avec un foreach également
     
-     if ($lejeuDkcntry == NULL) {
-        echo "c'est au niveau de la variable \$lejeuDkcntry que ça ne marche pas";
-     }
-  
+
     
     if( $key == "support"){
             echo "supports: ";
