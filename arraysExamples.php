@@ -25,7 +25,7 @@ echo $tableau_simple[0]."\n";
 // pour le parcourir en entier:
 echo "\n---------- parcourt simple -----------\n";
 foreach( $tableau_simple as $element ){
-    echo " - $element \n";
+    echo "  - $element \n";
 }
 
 
@@ -44,7 +44,7 @@ echo "\n---------- élement assoc -----------\n";
 echo $tableau_associatif["fruit"]."\n";
 
 // pour parcourir tout le tablaeu:
-echo "\n---------- parcourt assoc -----------\n";
+echo "\n---------- parcours assoc -----------\n";
 foreach( $tableau_associatif as $key=>$value){
     echo "$key: $value\n";
 }
