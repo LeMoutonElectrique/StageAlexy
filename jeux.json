@@ -3,62 +3,62 @@
     "shdwof" :
     {
         "nom": "Shadow of the Colossus",
-        "prix": 34.99,
-        "date": 07 02 2018,
+        "prix": "35",
+        "date": "07022018",
         "support": ["sony","pc"]
     },
     "dkcntry" :
     {
         "nom": "Donkey-Kong Country:Tropical Freeze",
-        "prix": 24.99,
-        "date": 21 02 2014,
+        "prix": "25",
+        "date": "21022014",
         "support": ["nintendo"]
     },
     "mhw" :
     {
         "nom": "Monster Hunter World",
-        "prix": 50,
-        "date": 26 01 2018,
+        "prix": "50",
+        "date": "26012018",
         "support": ["pc", "sony", "xbox"]
     },
 
     "dbfz" :
     {
         "nom":"DragonBall Fighter Z",
-        "prix": 80.78,
-        "date": 26 01 2018,
+        "prix": "80",
+        "date": "26012018",
         "support": ["pc","sony","xbox"]
 
     },
     "bynnt2" :
     {
         "nom":"Bayonetta 2",
-        "prix": 30,
-        "date": 24 10 2014,
+        "prix": "30",
+        "date": "24102014",
         "support": ["nintendo"]
 
     },
      "gow" :
     {
         "nom":"God of War",
-        "prix": 60,
-        "date": 20 04 2018,
+        "prix": "60",
+        "date": "20042018",
         "support": ["sony"]
 
     },
      "kirby" :
     {
         "nom":"Kirby: Star allies",
-        "prix": 45,
-        "date": 16 03 2018,
+        "prix": "45",
+        "date": "16032018",
         "support": ["nintendo"]
 
     },
      "mk8dlx" :
     {
         "nom":"Mario Kart 8 Deluxe",
-        "prix": 45,
-        "date": 28 04 2017,
+        "prix": "45",
+        "date": "28042017",
         "support": ["nintendo"]
 
     },
@@ -66,40 +66,40 @@
      "lgdzelda" :
     {
         "nom":"The Legend of Zelda:Breath of the Wild",
-        "prix": 52,
-        "date": 08 12 2017,
+        "prix": "52",
+        "date": "08122017",
         "support": ["nintendo"]
 
     },
      "smarioodssy":
     {
         "nom":"Super Mario Odyssey",
-        "prix": 50,
-        "date": 27 10 2017,
+        "prix": "50",
+        "date": "27102017",
         "support": ["nintendo"]
 
     },
      "drksouls":
     {
         "nom":"Dark Souls",
-        "prix": 35,
-        "date": 25 05 2018,
+        "prix": "35",
+        "date": "25052018",
         "support": ["pc","sony","xbox","nintendo"]
 
     },
       "scrtofmna":
     {
         "nom":"Secret of Mana",
-        "prix": 35,
-        "date": 24 11 1994,
+        "prix": "35",
+        "date": "24111994",
         "support": ["pc","nintendo","sony","ios"]
 
     },
       "spltn2":
     {
         "nom":"Splatoon 2",
-        "prix": 50,
-        "date": 21 07 2017,
+        "prix": "50",
+        "date": "21072017",
         "support": ["nintendo"]
 
     },

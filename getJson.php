@@ -15,20 +15,27 @@
 
 // on charge le fichier
 // --------------------
-$json = file_get_contents("jeux.json");
+@$json = file_get_contents("jeux-alexy.json");
 
 
 // on peut afficher le contenu de ce fichier
 // echo $json;
-
+    if ($json == NULL) {
+        echo ("Votre page ne peut pas être chargée, veuillez réessayer ultérieurement");   
+        exit();
+    } 
+    else {
+       echo "ça marche c'est bon !!!!";
+    }
 // on décode  le json, pour en faire un objet php
 // ----------------------------------------------
 $listeJeux=json_decode($json, true);
 
 // on peut afficher l'objet résultant
-var_dump($listeJeux);
 
-
+//isset($listeJeux);
+//var_dump($listeJeux);
+   
 // On affiche la liste des jeux 
 // ------------------------------
     echo "\n---------- liste des jeux ----------\n";
@@ -38,7 +45,7 @@ var_dump($listeJeux);
 foreach($listeJeux as $key => $value){
      print "  - ".$key."\n";
 }
-
+exit();
 // On peut montrer le nom d'un jeu en particulier
 // ----------------------------------------------
 echo "\n---------- le jeu nrd ----------\n";
@@ -80,4 +87,5 @@ foreach($lejeuDkcntry as $key => $value)
 
 
 // ouf ...
+  
 ?>
