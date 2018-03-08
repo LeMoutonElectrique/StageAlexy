@@ -1,24 +1,106 @@
 
 {
-    "nrd" :
+    "shdwof" :
     {
-        "nom": "Le jeu Narda",
-        "prix": 12,
-        "date": 20180217,
-        "support": ["pc"]
+        "nom": "Shadow of the Colossus",
+        "prix": 34.99,
+        "date": 07 02 2018,
+        "support": ["sony","pc"]
     },
-    "got":
+    "dkcntry" :
     {
-        "nom": "Game of Thrones",
-        "prix": 21,
-        "date": 20171018,
-        "support": ["pc", "sony"]
+        "nom": "Donkey-Kong Country:Tropical Freeze",
+        "prix": 24.99,
+        "date": 21 02 2014,
+        "support": ["nintendo"]
     },
-    "sm":
+    "mhw" :
     {
-        "nom": "Super Mario",
-        "prix": 2,
-        "date": 20140908,
+        "nom": "Monster Hunter World",
+        "prix": 50,
+        "date": 26 01 2018,
         "support": ["pc", "sony", "xbox"]
-    }
+    },
+
+    "dbfz" :
+    {
+        "nom":"DragonBall Fighter Z",
+        "prix": 80.78,
+        "date": 26 01 2018,
+        "support": ["pc","sony","xbox"]
+
+    },
+    "bynnt2" :
+    {
+        "nom":"Bayonetta 2",
+        "prix": 30,
+        "date": 24 10 2014,
+        "support": ["nintendo"]
+
+    },
+     "gow" :
+    {
+        "nom":"God of War",
+        "prix": 60,
+        "date": 20 04 2018,
+        "support": ["sony"]
+
+    },
+     "kirby" :
+    {
+        "nom":"Kirby: Star allies",
+        "prix": 45,
+        "date": 16 03 2018,
+        "support": ["nintendo"]
+
+    },
+     "mk8dlx" :
+    {
+        "nom":"Mario Kart 8 Deluxe",
+        "prix": 45,
+        "date": 28 04 2017,
+        "support": ["nintendo"]
+
+    },
+   
+     "lgdzelda" :
+    {
+        "nom":"The Legend of Zelda:Breath of the Wild",
+        "prix": 52,
+        "date": 08 12 2017,
+        "support": ["nintendo"]
+
+    },
+     "smarioodssy":
+    {
+        "nom":"Super Mario Odyssey",
+        "prix": 50,
+        "date": 27 10 2017,
+        "support": ["nintendo"]
+
+    },
+     "drksouls":
+    {
+        "nom":"Dark Souls",
+        "prix": 35,
+        "date": 25 05 2018,
+        "support": ["pc","sony","xbox","nintendo"]
+
+    },
+      "scrtofmna":
+    {
+        "nom":"Secret of Mana",
+        "prix": 35,
+        "date": 24 11 1994,
+        "support": ["pc","nintendo","sony","ios"]
+
+    },
+      "spltn2":
+    {
+        "nom":"Splatoon 2",
+        "prix": 50,
+        "date": 21 07 2017,
+        "support": ["nintendo"]
+
+    },
 }

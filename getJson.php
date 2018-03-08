@@ -26,13 +26,12 @@ $json = file_get_contents("jeux.json");
 $listeJeux=json_decode($json, true);
 
 // on peut afficher l'objet résultant
-//var_dump($listeJeux);
+var_dump($listeJeux);
 
 
 // On affiche la liste des jeux 
 // ------------------------------
-echo "\n---------- liste des jeux ----------\n";
-
+    echo "\n---------- liste des jeux ----------\n";
 // C'est à dire que l'on parcourt tout le tableau associatif
 // à base de clef/valeur, et on n'affiche que la clef
 //
@@ -47,8 +46,8 @@ echo "\n---------- le jeu nrd ----------\n";
 // C'est à dire que l'on récupére un jeu en particulier avec sa clef
 // et on affiche la clef 'nom ' de ce jeu (qui est lui même un tableau associatif)
 //
-$lejeuNarda = $listeJeux["nrd"];
-echo $lejeuNarda["nom"]."\n";
+$lejeuShdwof = $listeJeux["shdwof"];
+echo $lejeuShdwof["nom"]."\n";
 
 // On peut montrer toute la description d'un jeu en particulier
 // ------------------------------------------------------------
@@ -58,11 +57,11 @@ echo "\n---------- le jeu got ----------\n";
 // C'est comme le parcours de la liste des jeux:
 
 // 1- on récupére un jeu en particulier
-$lejeuGot = $listeJeux["got"];
+$lejeuDkcntry = $listeJeux["dkcntry"];
 
 // 2- on parcourt toute la liste associative clef/valeur
 //    que  l'on affiche
-foreach($lejeuGot as $key => $value)
+foreach($lejeuDkcntry as $key => $value)
 {
     // 3- Attention, si c'est la clef support que l'on  veut afficher,
     //    comme c'est un tableau
