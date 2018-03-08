@@ -20,21 +20,19 @@
 
 // on peut afficher le contenu de ce fichier
 // echo $json;
-    if ($json == NULL) {
-        echo ("Votre page ne peut pas être chargée, veuillez réessayer ultérieurement");   
-        exit();
-    } 
-    else {
-       echo "ça marche c'est bon !!!!";
-    }
+  
+
 // on décode  le json, pour en faire un objet php
 // ----------------------------------------------
 $listeJeux=json_decode($json, true);
-
+if ($listeJeux == NULL) {
+        echo ("Votre page ne peut pas être chargée, veuillez réessayer ultérieurement");   
+        exit();
+    } 
 // on peut afficher l'objet résultant
 
 //isset($listeJeux);
-//var_dump($listeJeux);
+var_dump($listeJeux);
    
 // On affiche la liste des jeux 
 // ------------------------------
