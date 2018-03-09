@@ -28,7 +28,7 @@ La fonction qui permet de créer le tableau contenant les infos des jeux de la l
 function getListProductsInfos(){
 
 	@$json = file_get_contents("jeux.json");
-	$Images_jeux = array("\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"");
+	//$Images_jeux = array("\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"");
 	
 	$listeJeux=json_decode($json, true);
 		if ($listeJeux == NULL) {
@@ -46,7 +46,7 @@ foreach ($listeJeux as $key => $value) {
 	
 	echo "<article>"."\n";
 	
-	echo '<img src='.$Images_jeux[$i].' class="images_produits">'."\n";
+	echo '<img src="images jeux/'.$listejeux["image"].'" class="images_produits">'."\n";
 	echo "<h2>".$listejeux["nom"]."</h2>"."\n";
 	echo "<h3> Prix : ".$listejeux["prix"]."€ </h3>"."\n";
 	echo '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tellus eu lacus fermentum aliquet sed eget lectus. <a href="#">Voir plus</a></p>'."\n";
