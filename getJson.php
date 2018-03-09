@@ -20,7 +20,7 @@
 
 // on peut afficher le contenu de ce fichier
 // echo $json;
-  
+    
 
 // on décode  le json, pour en faire un objet php
 // ----------------------------------------------
@@ -33,15 +33,14 @@ if ($listeJeux == NULL) {
 
 //isset($listeJeux);
 //var_dump($listeJeux);
-   
-// On affiche la liste des jeux 
+   // On affiche la liste des jeux 
 // ------------------------------
     echo "\n---------- liste des jeux ----------\n";
 // C'est à dire que l'on parcourt tout le tableau associatif
 // à base de clef/valeur, et on n'affiche que la clef
 //
 foreach($listeJeux as $key => $value){
-     print "  - ".$key."\n";
+     print "  - ".$key  ."\n";
 }
 //exit();
 // On peut montrer le nom d'un jeu en particulier

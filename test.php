@@ -1,21 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
 
 <?php
 require_once("StructLib.php");
 require_once("FunctionLib.php");
 
-echo getHead("Titre de Test");
-?>
-
-</head>
-<body>
-		
-<?php
-	
-	echo getHeader();
-	echo getMenuDéroulantContent();
+//echo getHead("Titre de Test");
 ?>
 
 <?php
@@ -23,22 +11,20 @@ echo getHead("Titre de Test");
 	
 	
 ?>
-<main>
+
 <?php
 	
-	echo getListProducts();
+	echo getListProductsInfos();
 	
+
+	
+	
+	/*$listeJeux=json_decode($json, true);
+		if ($listeJeux == NULL) {
+        	echo ("Votre page ne peut pas être chargée, veuillez réessayer ultérieurement");   
+        	exit();
+        }
+	var_dump($listeJeux);*/
 
 
 ?>
-</main>
-
-<?php
-
-	echo getFooter();
-
-	
-?>
-
-</body>
-</html>

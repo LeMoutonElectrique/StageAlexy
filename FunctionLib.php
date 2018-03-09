@@ -20,28 +20,44 @@ function getListProducts(){
 
 }
 
-/**function getMenuDéroulantContent(){
 
-	$Menu_Deroulant_Content = array("PC","XBOX","SONY","RETRO");
-	$Menu_Deroulant_Content_Links = array("produits.php","produits.php","produits.php","produits.php");
-	$Menu_Deroulant_Content_Id = array("pc","xbox","sony","retro");
+/*
+La fonction qui permet de créer le tableau contenant les infos des jeux de la liste
+*/
 
-	$result="";
-	echo "<div id=\"menu_deroulant\">\n";
-	echo "<div id=\"menu_deroulant_content\">\n";
+function getListProductsInfos(){
 
-	for ($i=0; $i <count($Menu_Deroulant_Content) ; $i++) {
-		
-		echo "<a href=\"".$Menu_Deroulant_Content_Links[$i]."\" id=\"".$Menu_Deroulant_Content_Id[$i]."\">".$Menu_Deroulant_Content[$i]."</a>\n";
-		
-	};
+	@$json = file_get_contents("jeux.json");
+	
+	$listeJeux=json_decode($json, true);
+		if ($listeJeux == NULL) {
+        	echo ("Votre page ne peut pas être chargée, veuillez réessayer ultérieurement");   
+        	exit();
+    	}
 
-	$result.= '</div>'."\n";
-	$result.= '</div>'."\n";
-	$result.= '</nav>'."\n";
-	$result.= '</header>'."\n";
-	return $result;
+ $i = 0;
 
-}**/
+foreach ($listeJeux as $key => $value) {
+
+	$listejeux = $listeJeux[$key];
+	echo "	Le nom du jeu est: ".$listejeux["nom"]."\n"."<br>";
+	echo "	Ce jeu coûte : ".$listejeux["prix"]."\n"."<br>"."<hr>"."<br>";
+
+	//$Listejeux = array();
+	$i = $i+1;
+	//$Listejeux[$i] = $key;
+	
+	//echo $key["nom"]."\n";
+}
+
+
+
+
+
+
+
+
+    //echo '<script> alert ("c\'est bon c\'est connecté et ça marche") </script>';
+    }
 
 ?>
