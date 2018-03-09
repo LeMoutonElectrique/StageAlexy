@@ -15,7 +15,7 @@
 
 // on charge le fichier
 // --------------------
-@$json = file_get_contents("jeux.json");
+@$json = file_get_contents("jeux-alexy.json");
 
 
 // on peut afficher le contenu de ce fichier

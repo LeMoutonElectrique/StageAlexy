@@ -4,7 +4,7 @@
     {
         "nom": "Shadow of the Colossus",
         "prix": "35",
-        "date": "07022018",
+        "date": "07 02 2018",
         "support": ["sony","pc"]
     },
     "1" :
@@ -18,7 +18,7 @@
     {
         "nom": "Monster Hunter World",
         "prix": "50",
-        "date": "26012018",
+        "date": "26 01 2018",
         "support": ["pc", "sony", "xbox"]
     },
 
@@ -26,7 +26,7 @@
     {
         "nom":"DragonBall Fighter Z",
         "prix": "80",
-        "date": "26012018",
+        "date": "26 01 2018",
         "support": ["pc","sony","xbox"]
 
     },
@@ -34,7 +34,7 @@
     {
         "nom":"Bayonetta 2",
         "prix": "30",
-        "date": "24102014",
+        "date": "24 10 2014",
         "support": ["nintendo"]
 
     },
@@ -42,7 +42,7 @@
     {
         "nom":"God of War",
         "prix": "60",
-        "date": "20042018",
+        "date": "20 04 2018",
         "support": ["sony"]
 
     },
@@ -50,7 +50,7 @@
     {
         "nom":"Kirby: Star allies",
         "prix": "45",
-        "date": "16032018",
+        "date": "16 03 2018",
         "support": ["nintendo"]
 
     },
@@ -58,7 +58,7 @@
     {
         "nom":"Mario Kart 8 Deluxe",
         "prix": "45",
-        "date": "28042017",
+        "date": "28 04 2017",
         "support": ["nintendo"]
 
     },
@@ -67,7 +67,7 @@
     {
         "nom":"The Legend of Zelda:Breath of the Wild",
         "prix": "52",
-        "date": "08122017",
+        "date": "08 12 2017",
         "support": ["nintendo"]
 
     },
@@ -75,7 +75,7 @@
     {
         "nom":"Super Mario Odyssey",
         "prix": "50",
-        "date": "27102017",
+        "date": "27 10 2017",
         "support": ["nintendo"]
 
     },
@@ -83,7 +83,7 @@
     {
         "nom":"Dark Souls",
         "prix": "35",
-        "date": "25052018",
+        "date": "25 05 2018",
         "support": ["pc","sony","xbox","nintendo"]
 
     },
@@ -91,7 +91,7 @@
     {
         "nom":"Secret of Mana",
         "prix": "35",
-        "date": "24111994",
+        "date": "24 11 1994",
         "support": ["pc","nintendo","sony","ios"]
 
     },
@@ -99,8 +99,8 @@
     {
         "nom":"Splatoon 2",
         "prix": "50",
-        "date": "21072017",
-        "support": ["nintendo"]
+        "date": "21 07 2017",
+        "support": ["nintendo","sony"]
 
     }
 }

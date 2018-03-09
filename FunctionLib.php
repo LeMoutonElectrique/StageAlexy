@@ -40,8 +40,29 @@ function getListProductsInfos(){
 foreach ($listeJeux as $key => $value) {
 
 	$listejeux = $listeJeux[$key];
-	echo "	Le nom du jeu est: ".$listejeux["nom"]."\n"."<br>";
-	echo "	Ce jeu coûte : ".$listejeux["prix"]."\n"."<br>"."<hr>"."<br>";
+	echo "	Le nom du jeu est : ".$listejeux["nom"]."\n"."<br>";
+	echo "	Ce jeu coûte : ".$listejeux["prix"]."\n"."<br>";
+	echo "	Le jeu est paru le : ".$listejeux["date"]."\n"."<br>";
+		
+		$supports = $listejeux["support"];
+
+			echo "Ce jeu fonctionne sur ";
+				foreach ($supports as $key => $value) {
+			echo "	- ".$value."\n"."<br>";
+				}
+			echo "<br><hr><br>";
+
+
+		/*if ($value = "support") {
+			 echo "supports: ";
+        foreach( $value as $support){
+            echo "$support ";
+		}
+
+ 		 continue;
+ 		}
+      
+    }*/
 
 	//$Listejeux = array();
 	$i = $i+1;
@@ -52,12 +73,6 @@ foreach ($listeJeux as $key => $value) {
 
 
 
-
-
-
-
-
-    //echo '<script> alert ("c\'est bon c\'est connecté et ça marche") </script>';
-    }
+}
 
 ?>
