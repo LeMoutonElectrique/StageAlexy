@@ -28,21 +28,48 @@ La fonction qui permet de créer le tableau contenant les infos des jeux de la l
 function getListProductsInfos(){
 
 	@$json = file_get_contents("jeux.json");
+	$Images_jeux = array("\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"");
 	
 	$listeJeux=json_decode($json, true);
 		if ($listeJeux == NULL) {
         	echo ("Votre page ne peut pas être chargée, veuillez réessayer ultérieurement");   
         	exit();
     	}
-
  $i = 0;
 
-foreach ($listeJeux as $key => $value) {
+ 	
+ 	echo '<div id="mise_en_page_articles">'."\n";
 
+
+foreach ($listeJeux as $key => $value) {
 	$listejeux = $listeJeux[$key];
-	echo "	Le nom du jeu est : ".$listejeux["nom"]."\n"."<br>";
-	echo "	Ce jeu coûte : ".$listejeux["prix"]."\n"."<br>";
-	echo "	Le jeu est paru le : ".$listejeux["date"]."\n"."<br>";
+	
+	echo "<article>"."\n";
+	
+	echo '<img src='.$Images_jeux[$i].' class="images_produits">'."\n";
+	echo "<h2>".$listejeux["nom"]."</h2>"."\n";
+	echo "<h3> Prix : ".$listejeux["prix"]."€ </h3>"."\n";
+	echo '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tellus eu lacus fermentum aliquet sed eget lectus. <a href="#">Voir plus</a></p>'."\n";
+
+
+
+	echo "</article>";
+	echo "<br><hr><br>";
+
+
+	$i = $i+1;
+	
+}
+	
+	echo "</div>";
+
+
+}
+/*
+Je garde ce qui est en commentaire en dessous pour une future fonction dont je me servirai pour introduire la date et les supports sur la page du jeu lui-même pour ne pas surcharger ce qu'il y a sur la page des produits qui sera déjà bien chargée
+*/
+
+	/*echo "	Le jeu est paru le : ".$listejeux["date"]."<br>";
 		
 		$supports = $listejeux["support"];
 
@@ -50,29 +77,6 @@ foreach ($listeJeux as $key => $value) {
 				foreach ($supports as $key => $value) {
 			echo "	- ".$value."\n"."<br>";
 				}
-			echo "<br><hr><br>";
-
-
-		/*if ($value = "support") {
-			 echo "supports: ";
-        foreach( $value as $support){
-            echo "$support ";
-		}
-
- 		 continue;
- 		}
-      
-    }*/
-
-	//$Listejeux = array();
-	$i = $i+1;
-	//$Listejeux[$i] = $key;
-	
-	//echo $key["nom"]."\n";
-}
-
-
-
-}
-
+			echo "<br><hr><br>";*/
 ?>
+	

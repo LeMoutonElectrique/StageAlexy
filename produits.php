@@ -19,7 +19,7 @@ echo getHead("Les Produits");
 	<div id="main">
 <?php 
 		echo getHeader();
-		//echo getMenuDéroulantContent();
+		
 		
 ?>
 
@@ -33,85 +33,24 @@ echo getHead("Les Produits");
 	<br>
 
 
-<!--<?php 
-		echo getListProducts();
+
+<?php 
 		
-?>-->
-<div id="mise_en_page_articles">
+		echo getListProductsInfos();
+		
+?>
+<!--<div id="mise_en_page_articles">
 		<article>
 			<img src="images jeux/monsterhunterworld.jpg" class="images_produits">
 			<h2>Nom du jeux</h2>
 			<h3>Prix du jeu</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tellus eu lacus fermentum aliquet sed eget lectus. <a href="#">Voir plus</a></p>
-			<ul>
-				<li>RAM nécessaire</li>
-				<li>Stockage nécessaire</li>
-				<li>supports compatible (+OS si PC)</li>
-				<li>Processeur (Si pc)</li>
-				<li>Carte graphique (Si pc)</li>
-			</ul>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tellus eu lacus fermentum aliquet sed eget lectus. <a href="#">Voir plus</a></p>-->
+		
 			
 		</article>
 		<hr>
 		<br>
-		<article>
-			<img src="images jeux/monsterhunterworld.jpg" class="images_produits">
-			<h2>Nom du jeux</h2>
-			<h3>Prix du jeu</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tellus eu lacus fermentum aliquet sed eget lectus.<a href="#">Voir plus</a></p>
-			<ul>
-				<li>RAM nécessaire</li>
-				<li>Stockage nécessaire</li>
-				<li>supports compatible (+OS si PC)</li>
-				<li>Processeur (Si pc)</li>
-				<li>Carte graphique (Si pc)</li>
-			</ul>
-		</article>
-		<hr>
-		<br>
-		<article>
-			<img src="images jeux/monsterhunterworld.jpg" class="images_produits">
-			<h2>Nom du jeux</h2>
-			<h3>Prix du jeu</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tellus eu lacus fermentum aliquet sed eget lectus.<a href="#">Voir plus</a></p>
-			<ul>
-				<li>RAM nécessaire</li>
-				<li>Stockage nécessaire</li>
-				<li>supports compatible (+OS si PC)</li>
-				<li>Processeur (Si pc)</li>
-				<li>Carte graphique (Si pc)</li>
-			</ul>
-		</article>
-		<hr>
-		<br>
-		<article>
-			<img src="images jeux/monsterhunterworld.jpg" class="images_produits">
-			<h2>Nom du jeux</h2>
-			<h3>Prix du jeu</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tellus eu lacus fermentum aliquet sed eget lectus.<a href="#">Voir plus</a></p>
-			<ul>
-				<li>RAM nécessaire</li>
-				<li>Stockage nécessaire</li>
-				<li>supports compatible (+OS si PC)</li>
-				<li>Processeur (Si pc)</li>
-				<li>Carte graphique (Si pc)</li>
-			</ul>
-		</article>
-		<hr>
-		<br>
-		<article>
-			<img src="images jeux/monsterhunterworld.jpg" class="images_produits">
-			<h2>Nom du jeux</h2>
-			<h3>Prix du jeu</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tellus eu lacus fermentum aliquet sed eget lectus<a href="#">Voir plus</a></p>
-			<ul>
-				<li>RAM nécessaire</li>
-				<li>Stockage nécessaire</li>
-				<li>supports compatible (+OS si PC)</li>
-				<li>Processeur (Si pc)</li>
-				<li>Carte graphique (Si pc)</li>
-			</ul>
-		</article>
+		
 	</div>
 
 	
