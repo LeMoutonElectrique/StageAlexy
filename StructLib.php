@@ -133,26 +133,6 @@ function getMenuDéroulantContent(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**
 	Fonction pour intégrer le footer automatiquement avec un echo getFooter();
  */

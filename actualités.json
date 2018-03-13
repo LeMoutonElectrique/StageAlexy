@@ -1,0 +1,32 @@
+
+	{
+		"0":
+		{
+			"titre": "Retrait des mesures anti-cheat sur PUBG",
+			"image": "pubg.jpg",
+			"actualité": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ornare molestie. Fusce pharetra ipsum sit amet placerat porttitor. Ut nec vehicula orci, sed vehicula tellus. Praesent egestas, nulla in.",
+			"date": "12/03/2018"
+		},
+		"1":
+		{
+			"titre": "La FreeSync 2 arrive sur Xbox One",
+			"image": "xbox.jpg",
+			"actualité": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ornare molestie. Fusce pharetra ipsum sit amet placerat porttitor. Ut nec vehicula orci, sed vehicula tellus. Praesent egestas, nulla in.",
+			"date": "12/03/2018"
+		},
+		"2":
+		{
+			"titre": "Les nouveaux DLC de Dynasty Warriors 9",
+			"image": "dw.jpg",
+			"actualité": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ornare molestie. Fusce pharetra ipsum sit amet placerat porttitor. Ut nec vehicula orci, sed vehicula tellus. Praesent egestas, nulla in.",
+			"date": "12/03/2018"
+		},
+		"3":
+		{
+			"titre": "Un nouveau jeu mobile: WestWorld !",
+			"image": "ww.jpg",
+			"actualité": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ornare molestie. Fusce pharetra ipsum sit amet placerat porttitor. Ut nec vehicula orci, sed vehicula tellus. Praesent egestas, nulla in.",
+			"date": "12/03/2018"
+		}
+		
+	}

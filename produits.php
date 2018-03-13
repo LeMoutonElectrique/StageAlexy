@@ -39,6 +39,9 @@ echo getHead("Les Produits");
 		echo getListProductsInfos();
 		
 ?>
+
+
+
 <!--<div id="mise_en_page_articles">
 		<article>
 			<img src="images jeux/monsterhunterworld.jpg" class="images_produits">
@@ -47,12 +50,12 @@ echo getHead("Les Produits");
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tellus eu lacus fermentum aliquet sed eget lectus. <a href="#">Voir plus</a></p>-->
 		
 			
-		</article>
-		<hr>
-		<br>
+	
 		
 	</div>
-
+<div id="div_formulaire">
+	<a href="formulaire.html" id="lien_formulaire"><button id="bouton_formulaire">Ajouter un jeu</button></a>
+</div>
 	
 
 </main>

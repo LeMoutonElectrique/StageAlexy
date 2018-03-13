@@ -12,7 +12,7 @@ function getListProducts(){
 
 	for ($i=0; $i < count($List_Products); $i++) { 
 		echo "<li>".$List_Products[$i]."</li>\n";
-	};
+	};	
 	
 	$result.= '</ul>'."\n";
 
@@ -38,33 +38,62 @@ function getListProductsInfos(){
  $i = 0;
 
  	
- 	echo '<div id="mise_en_page_articles">'."\n";
+ 	echo '<div id="mise_en_page_produits">'."\n";
 
 
-foreach ($listeJeux as $key => $value) {
-	$listejeux = $listeJeux[$key];
+	foreach ($listeJeux as $key => $value) {
+		$jeux = $listeJeux[$key];
 	
-	echo "<article>"."\n";
-	
-	echo '<img src="images jeux/'.$listejeux["image"].'" class="images_produits">'."\n";
-	echo "<h2>".$listejeux["nom"]."</h2>"."\n";
-	echo "<h3> Prix : ".$listejeux["prix"]."€ </h3>"."\n";
-	echo '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tellus eu lacus fermentum aliquet sed eget lectus. <a href="#">Voir plus</a></p>'."\n";
+		echo "<article>"."\n";
+		
+		echo '<img src="images jeux/'.$jeux["image"].'" class="images_produits">'."\n";
+		echo "<h2>".$jeux["nom"]."</h2>"."\n";
+		echo "<h3> Prix : ".$jeux["prix"]."€ </h3>"."\n";
+		echo '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tellus eu lacus fermentum aliquet sed eget lectus. <a href="#">Voir plus</a></p>'."\n";
 
 
 
-	echo "</article>";
-	echo "<br><hr><br>";
+		echo "</article>";
+		echo "<br><hr><br>";
 
 
 	$i = $i+1;
 	
 }
 	
-	echo "</div>";
+	//echo "</div>";
 
 
 }
+
+
+function getActualites(){
+
+	
+	@$json = file_get_contents("actualités.json");
+	$ListeActualités = json_decode($json, true);
+	//var_dump($ListeActualités);
+
+	if ($ListeActualités == NULL) {
+        	echo ("Votre page ne peut pas être chargée, veuillez réessayer ultérieurement");   
+        	exit();
+    	}
+
+    	echo "<div id=\"mise_en_page_articles\">"."\n";
+    foreach ($ListeActualités as $key => $value) {
+    	$listeactualtés = $ListeActualités[$key];
+   
+    	
+    	echo "<article class=\"article_accueil\">"."\n";	
+    	echo '<img src="images articles/'.$listeactualtés["image"].'" class="images_actualités">'."\n";
+    	echo "<h1>".$listeactualtés["titre"]."</h1>"."\n";
+    	echo "<p>".$listeactualtés["actualité"]."<a href=\"#\">Voir + </a></p>"."\n";
+    	echo "</article>"."\n";
+    	echo "<br>"."\n"."<hr>"."\n"."<br>"."\n";
+	}
+		echo "</div>"."\n";
+}
+
 /*
 Je garde ce qui est en commentaire en dessous pour une future fonction dont je me servirai pour introduire la date et les supports sur la page du jeu lui-même pour ne pas surcharger ce qu'il y a sur la page des produits qui sera déjà bien chargée
 */

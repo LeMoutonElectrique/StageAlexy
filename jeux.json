@@ -1,119 +1,143 @@
-
-{
-    "0" :
+[
     {
         "nom": "Shadow of the Colossus",
         "prix": "35",
-        "image":"shadowofthecolossus.jpg",
+        "image": "shadowofthecolossus.jpg",
         "date": "07 02 2018",
-        "support": ["sony","pc"]
+        "support": [
+            "sony",
+            "pc"
+        ]
     },
-    "1" :
     {
         "nom": "Donkey-Kong Country:Tropical Freeze",
         "prix": "25",
-        "image":"donkey-kong.jpg",
+        "image": "donkey-kong.jpg",
         "date": "21 02 2014",
-        "support": ["nintendo"]
+        "support": [
+            "nintendo"
+        ]
     },
-    "2" :
     {
         "nom": "Monster Hunter World",
         "prix": "50",
-        "image":"monsterhunterworld.jpg",
+        "image": "monsterhunterworld.jpg",
         "date": "26 01 2018",
-        "support": ["pc", "sony", "xbox"]
+        "support": [
+            "pc",
+            "sony",
+            "xbox"
+        ]
     },
-
-    "3" :
     {
-        "nom":"DragonBall Fighter Z",
+        "nom": "DragonBall Fighter Z",
         "prix": "80",
-        "image":"bdzfighterz.jpg",
+        "image": "bdzfighterz.jpg",
         "date": "26 01 2018",
-        "support": ["pc","sony","xbox"]
-
+        "support": [
+            "pc",
+            "sony",
+            "xbox"
+        ]
     },
-    "4" :
     {
-        "nom":"Bayonetta 2",
+        "nom": "Bayonetta 2",
         "prix": "30",
-        "image":"bayonetta2.jpg",
+        "image": "bayonetta2.jpg",
         "date": "24 10 2014",
-        "support": ["nintendo"]
-
+        "support": [
+            "nintendo"
+        ]
     },
-     "5" :
     {
-        "nom":"God of War",
+        "nom": "God of War",
         "prix": "60",
-        "image":"godofwar.jpg",
+        "image": "godofwar.jpg",
         "date": "20 04 2018",
-        "support": ["sony"]
-
+        "support": [
+            "sony"
+        ]
     },
-     "6" :
     {
-        "nom":"Kirby: Star allies",
+        "nom": "Kirby: Star allies",
         "prix": "45",
-        "image":"kirby.jpg",
+        "image": "kirby.jpg",
         "date": "16 03 2018",
-        "support": ["nintendo"]
-
+        "support": [
+            "nintendo"
+        ]
     },
-     "7" :
     {
-        "nom":"Mario Kart 8 Deluxe",
+        "nom": "Mario Kart 8 Deluxe",
         "prix": "45",
-        "image":"mariokart8dlx.jpg",
+        "image": "mariokart8dlx.jpg",
         "date": "28 04 2017",
-        "support": ["nintendo"]
-
+        "support": [
+            "nintendo"
+        ]
     },
-   
-     "8" :
     {
-        "nom":"The Legend of Zelda:Breath of the Wild",
+        "nom": "The Legend of Zelda:Breath of the Wild",
         "prix": "52",
-        "image":"zelda.jpg",
+        "image": "zelda.jpg",
         "date": "08 12 2017",
-        "support": ["nintendo"]
-
+        "support": [
+            "nintendo"
+        ]
     },
-     "9":
     {
-        "nom":"Super Mario Odyssey",
+        "nom": "Super Mario Odyssey",
         "prix": "50",
-        "image":"marioOdyssey.jpg",
+        "image": "marioOdyssey.jpg",
         "date": "27 10 2017",
-        "support": ["nintendo"]
-
+        "support": [
+            "nintendo"
+        ]
     },
-     "10":
     {
-        "nom":"Dark Souls",
+        "nom": "Dark Souls",
         "prix": "35",
-        "image":"darksouls.jpg",
+        "image": "darksouls.jpg",
         "date": "25 05 2018",
-        "support": ["pc","sony","xbox","nintendo"]
-
+        "support": [
+            "pc",
+            "sony",
+            "xbox",
+            "nintendo"
+        ]
     },
-      "11":
     {
-        "nom":"Secret of Mana",
+        "nom": "Secret of Mana",
         "prix": "35",
-        "image":"secretofmana.jpg",
+        "image": "secretofmana.jpg",
         "date": "24 11 1994",
-        "support": ["pc","nintendo","sony","ios"]
-
+        "support": [
+            "pc",
+            "nintendo",
+            "sony",
+            "ios"
+        ]
     },
-      "12":
     {
-        "nom":"Splatoon 2",
+        "nom": "Splatoon 2",
         "prix": "50",
-        "image":"splatoon2.jpg",
+        "image": "splatoon2.jpg",
         "date": "21 07 2017",
-        "support": ["nintendo","sony"]
-
+        "support": [
+            "nintendo",
+            "sony"
+        ]
+    },
+    {
+        "nom": "minecraft",
+        "prix": "23",
+        "image": "bayonetta2.jpg",
+        "date": "2005",
+        "supports": [
+            "pc",
+            " sony",
+            " nintendo",
+            " xbox"
+        ]
     }
-}
+]

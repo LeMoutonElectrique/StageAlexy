@@ -1,0 +1,16 @@
+form{
+	text-align: center;
+	margin-top: 80px;
+}
+
+#valid_button{
+	height: 80px;
+	width: 150px;
+}
+
+input{
+	width: 500px;
+}
+#GET-description_jeu{
+	height: 150px; 
+}
