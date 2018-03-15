@@ -64,6 +64,19 @@ echo getHead("Les Produits");
 <?php
 	echo getFooter();
 ?>
+
+<script>
+    $(document).ready(function(){
+        alert("jQuery est prêt !");
+    });
+ 
+    $('.ahrefclass').click(function(){
+       var x = $(this).attr('id');
+       // alert(x);
+    });
+    $.post( "test.php", { clicked : "x" } );
+
+</script>
 </div>
 </body>
 </html>
