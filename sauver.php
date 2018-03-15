@@ -8,7 +8,7 @@ $nouveau_jeu = array(
 	"prix" => $_GET["prix_jeu"],
 	"image" => "bayonetta2.jpg",
 	"date" => $_GET["date_jeu"],
-	"supports" => $supports);
+	"support" => $supports);
 
 @$json = file_get_contents("jeux.json");
 $listeJeux=json_decode($json, true);
@@ -34,10 +34,14 @@ array_push($listeJeux, $nouveau_jeu);
 
 
 $nouvelle_liste_jeux = json_encode($listeJeux, JSON_PRETTY_PRINT);
-echo $nouvelle_liste_jeux;
+//echo $nouvelle_liste_jeux;
 
 file_put_contents("jeux.json", $nouvelle_liste_jeux);
 //var_dump($listeJeux);
+
+echo "<h2 align=\"center\">Votre jeu a bien été rajouté à la liste</h2>"."\n";
+echo "<a href=\"produits.php\"><button align=\"center\">Retourner aux produits</button></a>"."\n";
+
 
 	
 ?>

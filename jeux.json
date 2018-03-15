@@ -129,15 +129,14 @@
         ]
     },
     {
-        "nom": "minecraft",
-        "prix": "23",
+        "nom": "Fortnite",
+        "prix": "53,20",
         "image": "bayonetta2.jpg",
-        "date": "2005",
-        "supports": [
+        "date": "15\/02\/2017",
+        "support": [
             "pc",
-            " sony",
-            " nintendo",
-            " xbox"
+            "sony",
+            "xbox"
         ]
     }
 ]

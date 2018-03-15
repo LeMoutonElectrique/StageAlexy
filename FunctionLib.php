@@ -28,7 +28,7 @@ La fonction qui permet de créer le tableau contenant les infos des jeux de la l
 function getListProductsInfos(){
 
 	@$json = file_get_contents("jeux.json");
-	//$Images_jeux = array("\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"","\"images jeux/monsterhunterworld.jpg\"");
+	
 	
 	$listeJeux=json_decode($json, true);
 		if ($listeJeux == NULL) {
@@ -47,7 +47,7 @@ function getListProductsInfos(){
 		echo "<article>"."\n";
 		
 		echo '<img src="images jeux/'.$jeux["image"].'" class="images_produits">'."\n";
-		echo "<h2>".$jeux["nom"]."</h2>"."\n";
+		echo "<a href=\"test.php\" id=\"".$i."\" class=\"ahrefclass\"><h2>".$jeux["nom"]."</h2></a>"."\n";
 		echo "<h3> Prix : ".$jeux["prix"]."€ </h3>"."\n";
 		echo '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tellus eu lacus fermentum aliquet sed eget lectus. <a href="#">Voir plus</a></p>'."\n";
 
