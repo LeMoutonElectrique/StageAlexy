@@ -47,7 +47,7 @@ function getListProductsInfos(){
 		echo "<article>"."\n";
 		
 		echo '<img src="images jeux/'.$jeux["image"].'" class="images_produits">'."\n";
-		echo "<a href=\"test.php\" id=\"".$i."\" class=\"ahrefclass\"><h2>".$jeux["nom"]."</h2></a>"."\n";
+		echo "<a href=\"PagesJeux.php?id=$i\" id=\"".$i."\" class=\"ahrefclass\"><h2>".$jeux["nom"]."</h2></a>"."\n";
 		echo "<h3> Prix : ".$jeux["prix"]."€ </h3>"."\n";
 		echo '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tellus eu lacus fermentum aliquet sed eget lectus. <a href="#">Voir plus</a></p>'."\n";
 
@@ -94,18 +94,61 @@ function getActualites(){
 		echo "</div>"."\n";
 }
 
-/*
-Je garde ce qui est en commentaire en dessous pour une future fonction dont je me servirai pour introduire la date et les supports sur la page du jeu lui-même pour ne pas surcharger ce qu'il y a sur la page des produits qui sera déjà bien chargée
-*/
+function getPageJeuxSettings(){
+	$id = $_GET["id"];
 
-	/*echo "	Le jeu est paru le : ".$listejeux["date"]."<br>";
+	
+	@$json = file_get_contents("jeux.json");
+		$liste_jeux = json_decode($json, true);
+	
+		$nombre_jeux = count($liste_jeux);
+		$liste_prix = array();
+		$liste_nom = array();
+		$liste_image = array();
+		$liste_date = array();
+		$liste_description = array();
+		$liste_support = array();
+		$supports =array();
+
+	foreach ($liste_jeux as $key => $value){
+		$jeux = $liste_jeux[$key];
 		
-		$supports = $listejeux["support"];
+		
+		$liste_nom[$key] = $jeux["nom"];
 
-			echo "Ce jeu fonctionne sur ";
-				foreach ($supports as $key => $value) {
-			echo "	- ".$value."\n"."<br>";
-				}
-			echo "<br><hr><br>";*/
+		$liste_prix[$key] = $jeux["prix"];
+		
+
+		$liste_image[$key] = $jeux["image"];
+
+		$liste_date[$key] = $jeux["date"];
+
+		$liste_description[$key] = $jeux["description"];
+
+		$liste_support[$key] = $jeux["support"];
+			foreach ($liste_support as $supkey => $supvalue) {
+				$supports[$supkey] = $supvalue;
+			}
+
+	}
+}
+
+
+function getPageJeuxContent(){
+	echo "<h1 id=\"titre_page_jeux\">".$liste_nom[$id]."<h3>(sorti le ".$liste_date[$id]." )</h1><br><br>\n";
+	echo "<img src=\"images jeux/".$liste_image[$id]."\" id=\"image_page_jeux\"><br><br>\n";
+	echo "<h2 id=\"prix_page_jeux\"> Prix : ".$liste_prix[$id]."€</h2><br><br>\n";
+
+	echo "<ul id=\"liste_supports_page_jeux\"><br><br>\n";
+		foreach ($supports[$id] as $supportkey => $supportvalue) {
+			echo "<li id=\"éléments_liste_supports\">".$supportvalue."</li><br>\n";
+		}
+	echo "</ul><br><br>\n";
+
+	echo "<p id\"description_page_jeux\">".$liste_description[$id];
+
+}
+
+
 ?>
 	

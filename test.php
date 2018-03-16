@@ -1,20 +1,12 @@
 
 <?php
+
+
 require_once("StructLib.php");
 require_once("FunctionLib.php");
 
-echo getHead("Titre de Test");
-?>
+$test = $_GET["id"];
 
-<?php
-	
-	
-	
-?>
-
-<?php
-	
-	//echo getListProductsInfos();
 	
 @$json = file_get_contents("jeux.json");
 	$liste_jeux = json_decode($json, true);
@@ -24,59 +16,62 @@ echo getHead("Titre de Test");
 	$liste_nom = array();
 	$liste_image = array();
 	$liste_date = array();
+	$liste_description = array();
 	$liste_support = array();
-	$suports =array();
-	//echo $nombre_jeux."<br><br><br><br><br>";
+	$supports =array();
 
-	foreach ($liste_jeux as $key => $value){
+foreach ($liste_jeux as $key => $value){
 		$jeux = $liste_jeux[$key];
 		
 		
 		$liste_nom[$key] = $jeux["nom"];
 
 		$liste_prix[$key] = $jeux["prix"];
-		//var_dump($liste_prix);
+		
 
 		$liste_image[$key] = $jeux["image"];
 
 		$liste_date[$key] = $jeux["date"];
+
+		$liste_description[$key] = $jeux["description"];
 
 		$liste_support[$key] = $jeux["support"];
 			foreach ($liste_support as $supkey => $supvalue) {
 				$supports[$supkey] = $supvalue;
 			}
 
-		//echo $key."		=>		".$liste_nom[$key]."	=>		".$liste_prix[$key]/*."	=>		".$supports*/."\n<br>";
+}
+
+echo getHead($liste_nom[$id]);
+
+?>
+
+
+
+<?php
 		
-
-	}
-
-$i  = 12;
-//for ($i=0; $i < $nombre_jeux ; $i++) { 
-	echo "<h1 class=\"pagejeux\" id=\"".$i."\">".$liste_nom[$i]."</h1>"."\n<br><br><br>";
-	echo "<img src=\"images jeux/".$liste_image[$i]."\">";
-	echo "";
-//}
+	
 
 
 
 
-	//var_dump($liste_support);
 
 	
 
-//var_dump(expression)
-
-	//var_dump($ListeActualités);
 	
-	/*$listeJeux=json_decode($json, true);
-		if ($listeJeux == NULL) {
-        	echo ("Votre page ne peut pas être chargée, veuillez réessayer ultérieurement");   
-        	exit();
-        }
-	var_dump($listeJeux);*/
-	$test = $_POST['clicked'];
-	echo $test;
+
+
+	echo "<h1 id=\"titre_page_jeux\">".$liste_nom[$id]."<h3>(sorti le ".$liste_date[$id]." )</h1><br><br>\n";
+	echo "<img src=\"images jeux/".$liste_image[$id]."\" id=\"image_page_jeux\"><br><br>\n";
+	echo "<h2 id=\"prix_page_jeux\">".$liste_prix[$id]."</h2><br><br>\n";
+
+	echo "<ul id=\"liste_supports_page_jeux\"><br><br>\n";
+		foreach ($supports[$id] as $supportkey => $supportvalue) {
+			echo "<li id=\"éléments_liste_supports\">".$supportvalue."</li><br>\n";
+		}
+	echo "</ul><br><br>\n";
+
+	echo "<p id\"description_page_jeux\">".$liste_description[$id];
 
 ?>
 
