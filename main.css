@@ -232,3 +232,20 @@ ul li{
 	height: 50px;
 	width: 100px;
 }
+
+#image_page_jeux{
+	float: left;
+	width: 500px;
+	height: 300px;
+}
+
+#liste_supports_page_jeux{
+	margin-left: 200px;
+
+}
+#description_page_jeux{
+	margin-top: 50px;
+	clear: left;
+	text-align: justify;
+	
+}
